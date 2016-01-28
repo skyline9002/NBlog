@@ -37,7 +37,7 @@ namespace NBlog.Web
 			routes.MapRoute("", "elmah/{type}", new { controller = "Elmah", action = "Index", type = UrlParameter.Optional });			
 
 			// entry pages
-			routes.MapRoute("", "{id}", new { controller = "Entry", action = "Show" });
+			routes.MapRoute("", "{id}", new { controller = "Entry", action = "Show"});
 
 			// general route
 			routes.MapRoute("", "{controller}/{action}/{id}", new { id = UrlParameter.Optional });

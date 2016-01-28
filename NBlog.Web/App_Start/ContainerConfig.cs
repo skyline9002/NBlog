@@ -67,6 +67,9 @@ namespace NBlog.Web
 				new NamedParameter("tenantSelector", new HttpTenantSelector())
 			);
 
+
+           
+
 			var repositoryKeys = new RepositoryKeys();
 			repositoryKeys.Add<Entry>(e => e.Slug);
 			repositoryKeys.Add<About>(a => a.Title);

@@ -17,7 +17,7 @@ namespace NBlog.Web
 			RouteConfig.RegisterRoutes(RouteTable.Routes);
 			ContainerConfig.SetUpContainer();
 			// Override the Instrumentation Key from ApplicationInsights.config, so we can set it from the app settings in the azure configuration dashboard
-			Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.Active.InstrumentationKey = ConfigurationManager.AppSettings["ApplicationInsightsInstrumentationKey"];
+            Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.Active.InstrumentationKey = ConfigurationManager.AppSettings["ApplicationInsightsInstrumentationKey"];
 		}
 
 		private void Application_End(object sender, EventArgs e)
